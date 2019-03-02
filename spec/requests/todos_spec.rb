@@ -65,11 +65,6 @@ RSpec.describe 'Todos API', type: :request do
       it 'returns status code 442' do
         expect(response).to have_http_status(422)
       end
-
-      # it 'returns a validation failure message' do
-      #   expect(response.body[:message].to_s)
-      #     .to eq("Validation failed: Created by can't be blank")
-      # end
     end
   end
 
